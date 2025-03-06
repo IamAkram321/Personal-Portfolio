@@ -12,7 +12,7 @@ function Home() {
   return (
     <section
       className="relative flex items-center justify-center min-h-screen bg-cover bg-center overflow-hidden dark:bg-gray-900" 
-      style={{ backgroundImage: "url('public/assets/newback.webp')" }}
+      style={{ backgroundImage: "url('/assets/newback.webp')" }}
     >
       <div className="absolute inset-0 bg-black/60 z-0"></div>
 
@@ -27,7 +27,7 @@ function Home() {
 
         <div className="relative mb-8">
           <img
-            src="public/assets/profile.jpg"
+            src="/assets/profile.jpg"
             alt="Md Akram"
             className="w-50 h-50 rounded-full mx-auto object-cover border-4 border-white/30 dark:border-gray-700/30 shadow-2xl transform hover:scale-110 transition-all duration-500 ease-in-out"
           />

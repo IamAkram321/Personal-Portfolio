@@ -7,42 +7,42 @@ function Projects() {
       description: "A responsive web app that replicates the official Innomatics website. This project helped enhance my front-end skills, focusing on responsive design and a user-friendly interface.",
       link: "https://innomatics-assignment5.vercel.app/",
       tech: ["HTML", "Tailwindcss", "JavaScript","React"],
-      image: "public/assets/todo.png"
+      image: "/assets/todo.png"
     },
     {
       title: "Innomatics Website Clone",
       description: "A responsive web app that replicates the official Innomatics website. This project helped enhance my front-end skills, focusing on responsive design and a user-friendly interface.",
       link: "https://iamakram321.github.io/innomaticsInternshipProject1/",
       tech: ["HTML", "CSS", "JavaScript","SwiperJS","Locomotive Scroll"],
-      image: "public/assets/innomatics.png"
+      image: "/assets/innomatics.png"
     },
     {
       title: "Memory Matching Game",
       description: "A JavaScript-based interactive game. This project showcases my ability to create dynamic and engaging user experiences.",
       link: "https://iamakram321.github.io/InnomaticsInternshipProject2/",
       tech: ["HTML", "CSS", "JavaScript"],
-      image: "public/assets/memory.png"
+      image: "/assets/memory.png"
     },
     {
       title: "Random Quotes Generator",
       description: "A task to enhance styling with CSS. I focused on responsive design and CSS animations to create a visually engaging experience.",
       link: "https://iamakram321.github.io/Random-Quote-Generator/",
       tech: ["HTML", "CSS", "JavaScript","FetchAPI"],
-      image: "public/assets/random.png"
+      image: "/assets/random.png"
     },
     {
       title: "Bubble Game",
       description: "An interactive bubble game built with JavaScript. This project enhanced my skills in creating dynamic gameplay mechanics.",
       link: "https://iamakram321.github.io/Bubble-Game/",
       tech: ["HTML", "CSS", "JavaScript"],
-      image: "public/assets/bubble.png"
+      image: "/assets/bubble.png"
     },
     {
       title: "Sundown Website",
       description: "A project focused on responsive web design, CSS animations, and modern web practices to create a clean, minimalistic website.",
       link: "https://iamakram321.github.io/Sundown-Website/",
       tech: ["HTML", "CSS", "JavaScript","SwiperJS","Locomotive Scroll"],
-      image: "public/assets/sundown.png"
+      image: "/assets/sundown.png"
     }
   ];
 
