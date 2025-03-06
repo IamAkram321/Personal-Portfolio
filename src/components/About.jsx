@@ -4,7 +4,7 @@ function About() {
   return (
     <section
       className="py-16 bg-cover bg-center min-h-screen relative overflow-hidden"
-      style={{ backgroundImage: "url('src/assets/newback.webp')" }}
+      style={{ backgroundImage: "url('public/assets/newback.webp')" }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
 
@@ -17,7 +17,7 @@ function About() {
           <div className="md:col-span-1 flex justify-center">
             <div className="relative">
               <img
-                src="src/assets/golo.webp"
+                src="public/assets/golo.webp"
                 alt="Profile"
                 className="w-64 h-64 rounded-full object-cover border-4 border-white/20 shadow-lg transform hover:scale-105 transition-all duration-300"
               />
@@ -65,8 +65,6 @@ function About() {
           </div>
         </div>
       </div>
-
-      {/* Animations */}
       <style jsx>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }

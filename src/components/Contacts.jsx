@@ -37,7 +37,7 @@ function Contact() {
   return (
     <section 
       className="py-16 bg-gray-100 bg-cover bg-center min-h-screen relative overflow-hidden"
-      style={{ backgroundImage: "url('src/assets/newback.webp')" }}
+      style={{ backgroundImage: "url('public/assets/newback.webp')" }}
     >
       <div className="absolute inset-0 bg-black/40"></div>
       
@@ -47,7 +47,6 @@ function Contact() {
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <form 
             onSubmit={handleSubmit} 
             className="space-y-6 bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-lg"

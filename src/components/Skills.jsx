@@ -44,7 +44,7 @@ function Skills() {
   return (
     <section
       className="py-16 bg-cover bg-center min-h-screen relative overflow-hidden"
-      style={{ backgroundImage: "url('src/assets/newback.webp')" }}
+      style={{ backgroundImage: "url('public/assets/newback.webp')" }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
 
