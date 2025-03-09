@@ -4,9 +4,9 @@ function Projects() {
   const projects = [
     {
       title: "Get Your Works Done",
-      description: "A responsive web app that replicates the official Innomatics website. This project helped enhance my front-end skills, focusing on responsive design and a user-friendly interface.",
+      description: "This is a sleek and interactive To-Do App built using React + Vite, styled with Tailwind CSS, and enhanced with smooth scrolling effects using Locomotive Scroll. It offers a user-friendly interface for managing daily tasks efficiently.",
       link: "https://innomatics-assignment5.vercel.app/",
-      tech: ["HTML", "Tailwindcss", "JavaScript","React"],
+      tech: ["HTML", "TailwindCSS", "JavaScript","React"],
       image: "/assets/todo.png"
     },
     {
@@ -25,9 +25,9 @@ function Projects() {
     },
     {
       title: "Random Quotes Generator",
-      description: "A task to enhance styling with CSS. I focused on responsive design and CSS animations to create a visually engaging experience.",
+      description: "This Random Quote Generator is a simple yet powerful web app built using HTML, CSS, and JavaScript, featuring voice integration for an interactive experience. With a click, it generates inspiring quotes and reads them aloud!",
       link: "https://iamakram321.github.io/Random-Quote-Generator/",
-      tech: ["HTML", "CSS", "JavaScript","FetchAPI"],
+      tech: ["HTML", "CSS", "JavaScript"],
       image: "/assets/random.png"
     },
     {
