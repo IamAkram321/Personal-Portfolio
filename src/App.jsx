@@ -233,7 +233,7 @@ function App() {
           height: 60px;
           display: block;
           transform-style: preserve-3d;
-          transform: rotateX(-20deg);
+          transform: rotateX(-20deg) scale(1.5);
         }
         .wrapper {
           position: relative;
@@ -274,8 +274,8 @@ function App() {
           background: conic-gradient(#2bdeac, #f028fd, #d8cce6, #2f2585);
         }
         .pyramid-loader .wrapper .shadow {
-          width: 25px;
-          height: 25px;
+          width: 30px;
+          height: 30px;
           background: #8b5ad5;
           position: absolute;
           top: 0;
