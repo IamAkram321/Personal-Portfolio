@@ -6,9 +6,11 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contacts";
 import { FaBars, FaTimes } from "react-icons/fa";
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -23,6 +25,15 @@ function App() {
     { path: "/projects", label: "Projects" },
     { path: "/contact", label: "Contact" },
   ];
+
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/assets/resume.pdf'; // Path to your resume file
+    link.download = 'resume.pdf'; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <Router>
@@ -49,7 +60,6 @@ function App() {
           </div>
         )}
 
-
         {!isLoading && (
           <>
             <nav className="fixed top-0 left-0 w-full bg-white/10 backdrop-blur-lg shadow-lg z-40">
@@ -65,7 +75,6 @@ function App() {
                     </div>
                   </div>
                 </div>
-
 
                 <ul className="hidden md:flex justify-center space-x-6">
                   {navItems.map((item) => (
@@ -84,6 +93,14 @@ function App() {
                       </NavLink>
                     </li>
                   ))}
+                  <li>
+                    <button
+                      onClick={handleDownloadResume}
+                      className="text-white text-lg px-4 py-1 rounded-full transition-all duration-300 hover:bg-white/20 hover:shadow-md cursor-pointer"
+                    >
+                      Download Resume
+                    </button>
+                  </li>
                 </ul>
 
                 <div className="flex items-center gap-4">
@@ -96,12 +113,11 @@ function App() {
                 </div>
               </div>
 
-
               {isMenuOpen && (
                 <div className="md:hidden bg-white/10 backdrop-blur-lg px-4 py-6 animate-slide-in">
                   <ul className="flex flex-col items-center space-y-4">
                     {navItems.map((item) => (
-                      <li key={item.path}>
+                      <li key={item.path} className="w-full">
                         <NavLink
                           to={item.path}
                           className={({ isActive }) =>
@@ -117,6 +133,17 @@ function App() {
                         </NavLink>
                       </li>
                     ))}
+                    <li className="w-full">
+                      <button
+                        onClick={() => {
+                          handleDownloadResume();
+                          setIsMenuOpen(false);
+                        }}
+                        className="text-white text-lg px-4 py-2 rounded-full transition-all duration-300 w-full text-center hover:bg-white/20 hover:shadow-md"
+                      >
+                        Download Resume
+                      </button>
+                    </li>
                   </ul>
                 </div>
               )}
@@ -135,7 +162,6 @@ function App() {
         )}
       </div>
 
-
       <style jsx>{`
         @keyframes slideIn {
           from { opacity: 0; transform: translateY(-20px); }
@@ -145,13 +171,12 @@ function App() {
           animation: slideIn 0.3s ease-out;
         }
 
-
         @keyframes fadeOut {
           from { opacity: 1; }
           to { opacity: 0; }
         }
         .animate-fade-out {
-          animation: fadeOut 0.5s ease-out 1.5s forwards; /* Adjusted to match 2s loader */
+          animation: fadeOut 0.5s ease-out 1.5s forwards;
         }
 
         .cube-loader {
@@ -185,7 +210,6 @@ function App() {
         .left { transform: rotateY(-90deg) translateZ(50px); }
         .top { transform: rotateX(90deg) translateZ(50px); }
         .bottom { transform: rotateX(-90deg) translateZ(50px); }
-
 
         .particle-glow {
           position: absolute;
