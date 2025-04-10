@@ -3,6 +3,13 @@ import React from "react";
 function Projects() {
   const projects = [
     {
+      title: "Huffman Compressor",
+      description: "Developed a web-based text compression tool using Huffman Coding in C++, compiled to WebAssembly with Emscripten. Designed an interactive UI with HTML, CSS, and JavaScript, achieving up to 69% size reduction (e.g., md akram from 64 bits to 20 bits). Hosted live on GitHub Pages with a clean, professional design.",
+      link: "https://iamakram321.github.io/Huffman-Compressor/",
+      tech: ["C++", "WebAssembly", "HTML","CSS","JavaScript"],
+      image: "/assets/compressor.png"
+    },
+    {
       title: "Get Your Works Done",
       description: "This is a sleek and interactive To-Do App built using React + Vite, styled with Tailwind CSS, and enhanced with smooth scrolling effects using Locomotive Scroll. It offers a user-friendly interface for managing daily tasks efficiently.",
       link: "https://innomatics-assignment5.vercel.app/",
