@@ -42,7 +42,7 @@ function Home() {
 
         <div className="flex justify-center space-x-8 mt-8">
           <a
-            href="https://www.linkedin.com/in/mdakram123"
+            href="https://www.linkedin.com/in/akramshahjada"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 text-white dark:text-gray-200 text-xl bg-blue-600/20 p-3 rounded-full hover:bg-blue-600/40 transition-all duration-300 transform hover:scale-110"
