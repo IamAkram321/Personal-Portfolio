@@ -31,6 +31,13 @@ function Projects() {
       image: "/assets/memory.png"
     },
     {
+      title: "Personal Budget Tracker",
+      description: "Created a practical budget tracking tool using HTML, CSS, and JavaScript, enabling users to manage income and expenses with real-time calculations. Designed a responsive, intuitive interface, deployed on GitHub Pages for easy access and usability.",
+      link: "https://iamakram321.github.io/innomaticsInternshipTask1/",
+      tech: ["HTML", "CSS", "JavaScript"],
+      image: "/assets/budget.png"
+    },
+    {
       title: "Random Quotes Generator",
       description: "This Random Quote Generator is a simple yet powerful web app built using HTML, CSS, and JavaScript, featuring voice integration for an interactive experience. With a click, it generates inspiring quotes and reads them aloud!",
       link: "https://iamakram321.github.io/Random-Quote-Generator/",
