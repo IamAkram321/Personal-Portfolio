@@ -122,7 +122,7 @@ function Contact() {
             {/* Social Links */}
             <div className="flex flex-col gap-4">
               <a 
-                href="https://www.linkedin.com/in/mdakram123" 
+                href="https://www.linkedin.com/in/akramshahjada" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center gap-3 text-xl text-white hover:text-blue-400 transition duration-300"
