@@ -9,7 +9,7 @@ function About() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="max-w-5xl mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-white text-center animate-fade-in">
+        <h2 className="text-4xl md:text-3xl font-bold mb-12 text-white text-center animate-fade-in">
           About Me
         </h2>
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -20,10 +20,17 @@ function Contact() {
       setSubmitStatus("Please fill in all fields");
       return;
     }
-    
+
     setIsSubmitting(true);
+
     try {
-      await axios.post("/api/contact", formData);
+      await emailjs.send(
+        "service_1p7yg8c",     
+        "template_sf5v7i8",    
+        formData,
+        "GRtGiN96z8m0iG19-"      
+      );
+
       setSubmitStatus("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
@@ -40,12 +47,12 @@ function Contact() {
       style={{ backgroundImage: "url('/assets/newback.webp')" }}
     >
       <div className="absolute inset-0 bg-black/40"></div>
-      
+
       <div className="max-w-4xl mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-10 text-white text-center animate-fade-in">
+        <h2 className="text-4xl md:text-3xl font-bold mb-10 text-white text-center animate-fade-in">
           Get in Touch
         </h2>
-        
+
         <div className="grid md:grid-cols-2 gap-12">
           <form 
             onSubmit={handleSubmit} 
@@ -61,7 +68,7 @@ function Contact() {
                 className="w-full p-4 bg-white/20 text-white placeholder-gray-300 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"
               />
             </div>
-            
+
             <div>
               <input
                 type="email"
@@ -72,7 +79,7 @@ function Contact() {
                 className="w-full p-4 bg-white/20 text-white placeholder-gray-300 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"
               />
             </div>
-            
+
             <div>
               <textarea
                 name="message"
@@ -83,7 +90,7 @@ function Contact() {
                 className="w-full p-4 bg-white/20 text-white placeholder-gray-300 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300 resize-none"
               />
             </div>
-            
+
             <button
               type="submit"
               disabled={isSubmitting}
@@ -93,14 +100,13 @@ function Contact() {
             >
               {isSubmitting ? "Sending..." : "Send Message"}
             </button>
-            
+
             {submitStatus && (
               <p className={`text-center ${submitStatus.includes("success") ? "text-green-300" : "text-red-300"}`}>
                 {submitStatus}
               </p>
             )}
           </form>
-
 
           <div className="text-white space-y-8">
             <div className="bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-lg">
@@ -109,17 +115,20 @@ function Contact() {
                 <p className="flex items-center gap-3">
                   <span className="text-blue-400">📧</span> 
                   <a href="mailto:akramshahjada786@gmail.com" className="hover:text-blue-400 transition">
-                  akramshahjada786@gmail.com
+                    akramshahjada786@gmail.com
                   </a>
                 </p>
                 <p className="flex items-center gap-3">
                   <span className="text-blue-400">📍</span> 
-                  Coimbatore,Tamil Nadu
+                  Coimbatore, Tamil Nadu
+                </p>
+                <p className="flex items-center gap-3">
+                  <span className="text-blue-400">📞</span> 
+                  +918607579202, +9779823521296
                 </p>
               </div>
             </div>
 
-            {/* Social Links */}
             <div className="flex flex-col gap-4">
               <a 
                 href="https://www.linkedin.com/in/akramshahjada" 
@@ -149,6 +158,7 @@ function Contact() {
           </div>
         </div>
       </div>
+
       <style jsx>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }

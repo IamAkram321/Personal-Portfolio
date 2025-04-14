@@ -3,6 +3,12 @@ import React from "react";
 function Projects() {
   const projects = [
     {
+      title: "AI Agent Chatbot",
+      description: "Built an AI chatbot with MCP server, integrating Gemini for conversations and X API for social posting.Enabled real-time tool execution (e.g., math, posts) via Server-Sent Events.Deployed locally with Git, mastering API authentication and responsive design.",
+      tech: ["JavaScript", "Express", "Gemini API", "X API"],
+      image: "/assets/agent.webp"
+    },
+    {
       title: "Huffman Compressor",
       description: "Developed a web-based text compression tool using Huffman Coding in C++, compiled to WebAssembly with Emscripten. Designed an interactive UI with HTML, CSS, and JavaScript, achieving up to 69% size reduction (e.g., md akram from 64 bits to 20 bits). Hosted live on GitHub Pages with a clean, professional design.",
       link: "https://iamakram321.github.io/Huffman-Compressor/",
@@ -68,9 +74,9 @@ function Projects() {
       <div className="absolute inset-0 bg-black/50"></div>
       
       <div className="max-w-6xl mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-12 text-center animate-fade-in">
+        <h3 className="text-3xl md:text-3xl font-extrabold text-white mb-12 text-center animate-fade-in">
           My Projects
-        </h2>
+        </h3>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
