@@ -3,6 +3,13 @@ import React from "react";
 function Projects() {
   const projects = [
     {
+      title: "SaarthiAI",
+      description: "Developed a ChatGPT-like AI chat bot using Next.js and Assistant UI, integrated with Gemini API for conversational capabilities. Designed a responsive UI with Tailwind CSS and deployedon Vercel for scalability",
+      tech: ["NextJS", "Assistant UI", "Tailwind CSS", "Gemini API","Vercel"],
+      image: "/assets/bot.png",
+      link: "https://saarthi-ai-drab.vercel.app/"
+    },
+    {
       title: "AI Agent Chatbot",
       description: "Built an AI chatbot with MCP server, integrating Gemini for conversations and X API for social posting.Enabled real-time tool execution (e.g., math, posts) via Server-Sent Events.Deployed locally with Git, mastering API authentication and responsive design.",
       tech: ["JavaScript", "Express", "Gemini API", "X API"],
@@ -23,7 +30,7 @@ function Projects() {
       image: "/assets/todo.png"
     },
     {
-      title: "Innomatics Website Clone",
+      title: "Innomatics Research Labs",
       description: "A responsive web app that replicates the official Innomatics website. This project helped enhance my front-end skills, focusing on responsive design and a user-friendly interface.",
       link: "https://iamakram321.github.io/innomaticsInternshipProject1/",
       tech: ["HTML", "CSS", "JavaScript","SwiperJS","Locomotive Scroll"],
