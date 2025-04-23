@@ -28,8 +28,8 @@ function App() {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/assets/resume.pdf'; // Path to your resume file
-    link.download = 'resume.pdf'; // Name of the downloaded file
+    link.href = '/assets/resume.pdf'; 
+    link.download = 'resume.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -62,8 +62,8 @@ function App() {
 
         {!isLoading && (
           <>
-            <nav className="fixed top-0 left-0 w-full bg-white/10 backdrop-blur-lg shadow-lg z-40">
-              <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <nav className="fixed top-5 h-18 w-full bg-white/10 backdrop-blur-lg shadow-lg z-40 rounded-2xl items-center ">
+              <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
                 <div className="flex items-center gap-3 md:block">
                   <div className="pyramid-loader">
                     <div className="wrapper">
@@ -96,7 +96,7 @@ function App() {
                   <li>
                     <button
                       onClick={handleDownloadResume}
-                      className="text-white text-lg px-4 py-1 rounded-full transition-all duration-300 hover:bg-white/20 hover:shadow-md cursor-pointer"
+                      className="text-white text-lg px-4 py-0.4 rounded-full transition-all duration-300 hover:bg-white/20 hover:shadow-md cursor-pointer "
                     >
                       Download Resume
                     </button>

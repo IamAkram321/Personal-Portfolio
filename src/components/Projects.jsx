@@ -39,16 +39,9 @@ function Projects() {
     {
       title: "Memory Matching Game",
       description: "A JavaScript-based interactive game. This project showcases my ability to create dynamic and engaging user experiences.",
-      link: "https://iamakram321.github.io/InnomaticsInternshipProject2/",
+      link: "https://iamakram321.github.io/Match-Your-Memory/",
       tech: ["HTML", "CSS", "JavaScript"],
       image: "/assets/memory.png"
-    },
-    {
-      title: "Personal Budget Tracker",
-      description: "Created a practical budget tracking tool using HTML, CSS, and JavaScript, enabling users to manage income and expenses with real-time calculations. Designed a responsive, intuitive interface, deployed on GitHub Pages for easy access and usability.",
-      link: "https://iamakram321.github.io/innomaticsInternshipTask1/",
-      tech: ["HTML", "CSS", "JavaScript"],
-      image: "/assets/budget.png"
     },
     {
       title: "Random Quotes Generator",

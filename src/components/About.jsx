@@ -25,7 +25,7 @@ function About() {
             </div>
           </div>
 
-          {/* About Content */}
+          
           <div className="md:col-span-2 bg-white/10 backdrop-blur-lg p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <p className="text-lg text-white text-justify leading-relaxed">
               As a passionate Full Stack Developer with a unique blend of Civil Engineering expertise, I thrive on creating innovative and seamless web applications. My journey in tech has fueled my desire to constantly learn and push boundaries, building meaningful solutions that impact users positively. I’m deeply committed to mastering new technologies and delivering exceptional projects.
@@ -53,9 +53,9 @@ function About() {
               </div>
             </div>
 
-            {/* CTA Button */}
+            
             <a
-              href="https://www.linkedin.com/in/mdakram123"
+              href="https://www.linkedin.com/in/akramshahjada/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
