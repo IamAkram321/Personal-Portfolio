@@ -3,6 +3,14 @@ import React from "react";
 function Projects() {
   const projects = [
     {
+      title: "Collaborative Real-Time Code Editor",
+      description: "Built a real-time collaborative code editor enabling multiple users to write and edit code simultaneously. Integrated Socket.IO for live synchronization, added syntax highlighting, and ensured smooth collaboration with scalable backend support. Deployed on Vercel for accessibility.",
+      tech: ["Next.js", "Socket.IO", "Express.js", "Tailwind CSS", "Vercel"],
+      image: "/assets/codesyncss.png",
+      link: "https://github.com/IamAkram321/Code-Editor"
+
+    },
+    {
       title: "SaarthiAI",
       description: "Developed a ChatGPT-like AI chat bot using Next.js and Assistant UI, integrated with Gemini API for conversational capabilities. Designed a responsive UI with Tailwind CSS and deployedon Vercel for scalability",
       tech: ["NextJS", "Assistant UI", "Tailwind CSS", "Gemini API","Vercel"],
