@@ -3,6 +3,12 @@ import React from "react";
 function Projects() {
   const projects = [
     {
+      title: "WatchTogether (Ongoing)",
+      description: "A collaborative web application that allows multiple users to watch YouTube videos in sync while chatting in real time. Users can create or join rooms, share video links, and control playback (play, pause, seek) seamlessly across all participants.The project demonstrates real-time communication, state synchronization, and interactive UI design.",
+      tech: ["Rect", "Socket.IO", "Express.js","Node.js","MongoDB", "Tailwind CSS"],
+      image: "/assets/watch1.png",
+    },
+    {
       title: "Collaborative Real-Time Code Editor",
       description: "Built a real-time collaborative code editor enabling multiple users to write and edit code simultaneously. Integrated Socket.IO for live synchronization, added syntax highlighting, and ensured smooth collaboration with scalable backend support. Deployed on Vercel for accessibility.",
       tech: ["Next.js", "Socket.IO", "Express.js", "Tailwind CSS", "Vercel"],

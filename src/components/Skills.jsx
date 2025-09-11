@@ -6,7 +6,7 @@ function Skills() {
     {
       category: "Frontend Development",
       icon: <FaCode className="text-blue-400 text-3xl" />,
-      skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Bootstrap"],
+      skills: ["HTML", "CSS", "JavaScript", "React","NextJS", "Tailwind CSS", "Bootstrap"],
       color: "from-blue-500 to-blue-700",
     },
     {
@@ -16,9 +16,9 @@ function Skills() {
       color: "from-blue-500 to-blue-700",
     },
     {
-      category: "Backend Development (Learning)",
+      category: "Backend Development",
       icon: <FaServer className="text-purple-400 text-3xl" />,
-      skills: ["Node.js", "Express", "MongoDB"],
+      skills: ["Node.js", "Express", "MongoDB","Socket.IO"],
       color: "from-purple-500 to-purple-700",
     },
     {
