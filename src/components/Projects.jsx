@@ -46,7 +46,7 @@ function Projects() {
     {
       title: "Innomatics Research Labs",
       description: "A responsive web app that replicates the official Innomatics website. This project helped enhance my front-end skills, focusing on responsive design and a user-friendly interface.",
-      link: "https://iamakram321.github.io/innomaticsInternshipProject1/",
+      link: "https://iamakram321.github.io/Innomatics-Research-Labs-Recreated/",
       tech: ["HTML", "CSS", "JavaScript","SwiperJS","Locomotive Scroll"],
       image: "/assets/innomatics.png"
     },
