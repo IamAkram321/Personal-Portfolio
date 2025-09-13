@@ -5,6 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contacts";
+import NetworkBackground from "./components/NetworkBackground";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function App() {
@@ -37,7 +38,10 @@ function App() {
 
   return (
     <Router>
-      <div className="App min-h-screen bg-gray-900">
+      <div className="App min-h-screen bg-gray-900 relative">
+        {/* Network Background */}
+        <NetworkBackground />
+        
         {isLoading && (
           <div className="fixed inset-0 flex items-center justify-center bg-black z-50 animate-fade-out">
             <div className="cube-loader">

@@ -43,8 +43,7 @@ function Contact() {
 
   return (
     <section 
-      className="py-16 bg-gray-100 bg-cover bg-center min-h-screen relative overflow-hidden"
-      style={{ backgroundImage: "url('/assets/newback.webp')" }}
+      className="py-16 min-h-screen relative overflow-hidden"
     >
       <div className="absolute inset-0 bg-black/40"></div>
 

@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate(); 
 
-
   const handleExploreClick = () => {
     navigate("/projects"); 
   };
@@ -29,7 +28,7 @@ function Home() {
           <img
             src="/assets/profile.jpg"
             alt="Md Akram"
-            className="w-50 h-50 rounded-full mx-auto object-cover border-4 border-white/30 dark:border-gray-700/30 shadow-2xl transform hover:scale-110 transition-all duration-500 ease-in-out"
+            className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-white/30 shadow-2xl transform hover:scale-110 transition-all duration-500 ease-in-out"
           />
           <div className="absolute inset-0 rounded-full bg-gradient-to-t from-blue-500/20 to-transparent animate-pulse"></div>
         </div>
