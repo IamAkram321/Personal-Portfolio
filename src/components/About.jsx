@@ -16,7 +16,7 @@ function About() {
           <div className="md:col-span-1 flex justify-center">
             <div className="relative">
               <img
-                src="/assets/golo.webp"
+                src="/assets/profile.jpg"
                 alt="Profile"
                 className="w-64 h-64 rounded-full object-cover border-4 border-white/20 shadow-lg transform hover:scale-105 transition-all duration-300"
               />

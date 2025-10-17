@@ -3,9 +3,17 @@ import React from "react";
 function Projects() {
   const projects = [
     {
+      title: "Fraud Detection System",
+      description:
+        "A machine learning-based web application that predicts fraudulent transactions using supervised learning models. Built with Streamlit for interactive UI, it allows users to input transaction data and instantly receive fraud predictions. The project includes data preprocessing, feature engineering, model training (using scikit-learn), and evaluation metrics for accuracy and precision tracking.",
+      tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Streamlit", "Matplotlib"],
+      image: "/assets/fraud.png",
+    },
+
+    {
       title: "WatchTogether (Ongoing)",
       description: "A collaborative web application that allows multiple users to watch YouTube videos in sync while chatting in real time. Users can create or join rooms, share video links, and control playback (play, pause, seek) seamlessly across all participants.The project demonstrates real-time communication, state synchronization, and interactive UI design.",
-      tech: ["Rect", "Socket.IO", "Express.js","Node.js","MongoDB", "Tailwind CSS"],
+      tech: ["Rect", "Socket.IO", "Express.js", "Node.js", "MongoDB", "Tailwind CSS"],
       image: "/assets/watch1.png",
     },
     {
@@ -19,7 +27,7 @@ function Projects() {
     {
       title: "SaarthiAI",
       description: "Developed a ChatGPT-like AI chat bot using Next.js and Assistant UI, integrated with Gemini API for conversational capabilities. Designed a responsive UI with Tailwind CSS and deployedon Vercel for scalability",
-      tech: ["NextJS", "Assistant UI", "Tailwind CSS", "Gemini API","Vercel"],
+      tech: ["NextJS", "Assistant UI", "Tailwind CSS", "Gemini API", "Vercel"],
       image: "/assets/bot.png",
       link: "https://saarthi-ai-drab.vercel.app/"
     },
@@ -33,21 +41,21 @@ function Projects() {
       title: "Huffman Compressor",
       description: "Developed a web-based text compression tool using Huffman Coding in C++, compiled to WebAssembly with Emscripten. Designed an interactive UI with HTML, CSS, and JavaScript, achieving up to 69% size reduction (e.g., md akram from 64 bits to 20 bits). Hosted live on GitHub Pages with a clean, professional design.",
       link: "https://iamakram321.github.io/Huffman-Compressor/",
-      tech: ["C++", "WebAssembly", "HTML","CSS","JavaScript"],
+      tech: ["C++", "WebAssembly", "HTML", "CSS", "JavaScript"],
       image: "/assets/compressor.png"
     },
     {
       title: "Get Your Works Done",
       description: "This is a sleek and interactive To-Do App built using React + Vite, styled with Tailwind CSS, and enhanced with smooth scrolling effects using Locomotive Scroll. It offers a user-friendly interface for managing daily tasks efficiently.",
       link: "https://innomatics-assignment5.vercel.app/",
-      tech: ["HTML", "TailwindCSS", "JavaScript","React"],
+      tech: ["HTML", "TailwindCSS", "JavaScript", "React"],
       image: "/assets/todo.png"
     },
     {
       title: "Innomatics Research Labs",
       description: "A responsive web app that replicates the official Innomatics website. This project helped enhance my front-end skills, focusing on responsive design and a user-friendly interface.",
       link: "https://iamakram321.github.io/Innomatics-Research-Labs-Recreated/",
-      tech: ["HTML", "CSS", "JavaScript","SwiperJS","Locomotive Scroll"],
+      tech: ["HTML", "CSS", "JavaScript", "SwiperJS", "Locomotive Scroll"],
       image: "/assets/innomatics.png"
     },
     {
@@ -75,22 +83,22 @@ function Projects() {
       title: "Sundown Website",
       description: "A project focused on responsive web design, CSS animations, and modern web practices to create a clean, minimalistic website.",
       link: "https://iamakram321.github.io/Sundown-Website/",
-      tech: ["HTML", "CSS", "JavaScript","SwiperJS","Locomotive Scroll"],
+      tech: ["HTML", "CSS", "JavaScript", "SwiperJS", "Locomotive Scroll"],
       image: "/assets/sundown.png"
     }
   ];
 
   return (
-    <section 
+    <section
       className="py-16 min-h-screen relative overflow-hidden"
     >
       <div className="absolute inset-0 bg-black/50"></div>
-      
+
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <h3 className="text-3xl md:text-3xl font-extrabold text-white mb-12 text-center animate-fade-in">
           My Projects
         </h3>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
@@ -104,7 +112,7 @@ function Projects() {
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-white mb-3">
                   {project.title}
@@ -112,7 +120,7 @@ function Projects() {
                 <p className="text-gray-200 text-sm mb-4 text-justify">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, idx) => (
                     <span
@@ -123,7 +131,7 @@ function Projects() {
                     </span>
                   ))}
                 </div>
-                
+
                 <a
                   href={project.link}
                   target="_blank"
