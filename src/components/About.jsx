@@ -2,9 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section
-      className="py-16 min-h-screen relative overflow-hidden"
-    >
+    <section className="py-16 min-h-screen relative overflow-hidden">
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="max-w-5xl mx-auto px-4 relative z-10">
@@ -24,35 +22,33 @@ function About() {
             </div>
           </div>
 
-          
           <div className="md:col-span-2 bg-white/10 backdrop-blur-lg p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <p className="text-lg text-white text-justify leading-relaxed">
-              As a passionate Full Stack Developer with a unique blend of Civil Engineering expertise, I thrive on creating innovative and seamless web applications. My journey in tech has fueled my desire to constantly learn and push boundaries, building meaningful solutions that impact users positively. I’m deeply committed to mastering new technologies and delivering exceptional projects.
+              I am a motivated Software Development Engineer passionate about building scalable and efficient web applications. I enjoy solving complex problems, learning new technologies, and delivering high-quality software that makes a real impact.
             </p>
             <p className="mt-4 text-white text-justify leading-relaxed">
-              Outside of coding, you’ll often find me reading, exploring the latest in tech, and traveling to new destinations that inspire both creativity and growth.
+              Beyond coding, I love exploring tech trends, contributing to projects that challenge my skills, and continually improving my knowledge to stay ahead in the ever-evolving software industry.
             </p>
             <blockquote className="mt-6 border-l-4 border-blue-400 pl-4 italic text-blue-200">
-              "A Developer who carefully crafts every line of code... Because if the logic isn't clean and well-structured, what else can you rely on to build something truly remarkable?"
+              "Clean, efficient, and well-structured code is the foundation of reliable software. I strive to write code that’s not only functional but also maintainable and scalable."
             </blockquote>
 
             {/* Quick Facts */}
             <div className="mt-6 grid grid-cols-2 gap-4 text-white">
               <div>
-                <span className="font-semibold text-blue-300">Background:</span> Civil Engineering
+                <span className="font-semibold text-blue-300">Focus:</span> Full Stack & Software Development
               </div>
               <div>
-                <span className="font-semibold text-blue-300">Focus:</span> Full Stack Development
+                <span className="font-semibold text-blue-300">Skills:</span> JavaScript, React, Node.js, Python
               </div>
               <div>
-                <span className="font-semibold text-blue-300">Hobbies:</span> Reading, Tech, Travel
+                <span className="font-semibold text-blue-300">Hobbies:</span> Problem Solving, Tech, Reading
               </div>
               <div>
-                <span className="font-semibold text-blue-300">Goal:</span> Impactful Solutions
+                <span className="font-semibold text-blue-300">Goal:</span> Build Impactful Software
               </div>
             </div>
 
-            
             <a
               href="https://www.linkedin.com/in/akramshahjada/"
               target="_blank"
@@ -64,6 +60,7 @@ function About() {
           </div>
         </div>
       </div>
+
       <style jsx>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
